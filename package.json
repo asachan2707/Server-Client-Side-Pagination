@@ -1,0 +1,16 @@
+{
+    "name": "angular-8-node-server-side-pagination-example",
+    "description": "Angular 8 + Node - Server Side Pagination Example",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && npm start",
+        "client-install": "cd client && npm install",
+        "server": "cd server && npm start",
+        "server-install": "cd server && npm install",
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "child-install": "concurrently \"npm run client-install\" \"npm run server-install\""
+    },
+    "devDependencies": {
+        "concurrently": "4.1.1"
+    }
+}
